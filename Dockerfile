@@ -14,6 +14,6 @@ FROM eclipse-temurin:17-jre-alpine
 
 WORKDIR /app
 
-COPY --from=0 /app/target/order-service-0.0.1.jar .
+COPY --from=0 /app/target/order_service-0.0.1.jar .
 
-CMD ["java", "-jar", "order-service-0.0.1.jar"]
+CMD ["java", "-jar", "order_service-0.0.1.jar"]
